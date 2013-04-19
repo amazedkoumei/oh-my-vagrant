@@ -1,0 +1,11 @@
+{
+  "run_list":[
+    "recipe[yum::epel]",
+    "recipe[libs]",
+    "recipe[rbenv]",
+    "recipe[rbenv::ruby-build]",
+    "recipe[gems]",
+    "recipe[postgresql92]",
+    "recipe[iptables_disable]"
+  ]
+}
